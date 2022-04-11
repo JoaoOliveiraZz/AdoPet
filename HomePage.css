@@ -1,0 +1,39 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body, hmtl{
+    height: 100vh;
+    background: #CCC5B9;
+}
+nav{
+    width: 100%;
+    background: #252422;
+    height: 10%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+nav a{
+    
+    color: #EB5E28;
+}
+nav .logo img{
+    height: 150px;
+    width: 190px;
+    background-size: cover;object-fit: fill;
+
+
+/* Paleta de cores principais:
+
+    Navbar-Backgroud: #252422
+    NavLinks-Color: #EB5E28
+    Page-Background: #CCC5B9
+
+
+*/
