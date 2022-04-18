@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>AdoPet</h1>
+    <div>
+        <h2>Crie sua conta agora</h2>  
+        <form action="/pagina-processa-dados-do-form" method="post" id="form">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" />
+                <small class="Nome"></small>
+            </div>
+            <div>
+                <label for="nome">Nome de Usuário:</label>
+                <input type="text" id="user" />
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" />
+            </div>
+            <div>
+                <label for="email">Confirme seu E-mail:</label>
+                <input type="email" id="emailConfirm" />
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha"></input>
+            </div>
+            <div>
+                <label for="senhac">Confirme a Senha:</label>
+                <input type="password" id="senhaConfirm"></input>
+            </div>
+            <h3>Gênero ?</h3>
+            
+                <INPUT TYPE="RADIO" NAME="genero" VALUE="op1"> Masculino
+                <INPUT TYPE="RADIO" NAME="genero" VALUE="op2"> Feminino
+                <INPUT TYPE="RADIO" NAME="genero" VALUE="op3"> Outro
+            
+            <button type="submit" id="cadastro">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="../scripts/validation.js"></script>
+
+ 
+</body>
+</html>
