@@ -22,42 +22,42 @@ function checkInput(){
     senhaConfirm = SenhaConfirm.value;
 
     if(nome.length < 6 || nome == ''){
+
         Nome.style.border = '2px solid red';
-        console.log('O nome deve conter no mínimo 6 caracteres')
-        showError(Nome, 'O nome deve conter no mínimo 6 caracteres')
+        showError('Nome', 'O nome deve conter no mínimo 6 caracteres')
+
+    } else{
+        cleanError('Nome');
+        Nome.style.border = '2px solid black';
     }
-    // else{
-    //     Nome.style.border = '2px solid green';
-    // }
 
     if(senha.length < 8){
         Senha.style.border = '2px solid red';
-        console.log('A senha deve conter no mínimo 8 caracteres')
+        showError('Senha', 'A senha deve conter no mínimo 8 caracteres');
+    }else{
+        cleanError('Senha')
     }
     if(senha != senhaConfirm){
         Senha.style.border = '2px solid red';
         SenhaConfirm.style.border = '2px solid red';
-        console.log('senhas nao batem')
+        showError('SenhaC', 'Senhas não conferem')
+     }else{
+         cleanError('SenhaC')
      }
-    //else{
-    //     Senha.style.border = '2px solid green';
-    //     SenhaConfirm.style.border = '2px solid green';
-    // }
     if(email != emailConfirm){
-        console.log('email não batem')
+        showError('EmailC', 'Os Email não conferem')
+    }else{
+        cleanError('EmailC')
     }
 
 
     
     
 }
-function showError(input, msg){
-
-    const MenssageError = document.getElementsByClassName(`${input}`);
-
+function showError(input, msg){const MenssageError = document.getElementById(`${input}`).textContent = msg;}
+function cleanError(input){
+    const Clean = document.getElementById(`${input}`).textContent = '';
 }
 
-
-3
 
 
