@@ -11,19 +11,23 @@
 
     <div>
         <h2>Login</h2>  
-        <form action="/pagina-processa-dados-do-form" method="post">
+        <form method="post">
             <div>
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" />
+                <small id="Email"></small>
             </div>
             <div>
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha"></input>
+                <small id="Senha"></small>
             </div>
             <h5>Ainda não é cadastrado ?</h5>
-            <h5>Increva-se</h5> 
+            <button type="submit" class="SubmitBtn">Entrar</h5> 
         </form>
     </div>
+
+    <script src="../scripts/LoginValidation.js"></script>
  
 </body>
 </html>

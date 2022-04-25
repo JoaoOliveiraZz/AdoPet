@@ -28,7 +28,6 @@ function checkInput(){
 
     } else{
         cleanError('Nome');
-        Nome.style.border = '2px solid black';
     }
 
     if(senha.length < 8){
@@ -44,6 +43,10 @@ function checkInput(){
      }else{
          cleanError('SenhaC')
      }
+     if (email == ''){
+         Email.style.border = '2px solid red';
+         showError('Email', 'O campo email não pode estar vazio');
+     }
     if(email != emailConfirm){
         showError('EmailC', 'Os Email não conferem')
     }else{
@@ -55,9 +58,7 @@ function checkInput(){
     
 }
 function showError(input, msg){const MenssageError = document.getElementById(`${input}`).textContent = msg;}
-function cleanError(input){
-    const Clean = document.getElementById(`${input}`).textContent = '';
-}
+function cleanError(input){const Clean = document.getElementById(`${input}`).textContent = '';}
 
 
 
