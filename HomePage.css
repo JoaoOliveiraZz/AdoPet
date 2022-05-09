@@ -25,7 +25,6 @@ nav{
     justify-content: space-around;
 }
 nav a{
-    
     color: #fff;
 }
 nav .logo img{
@@ -37,7 +36,7 @@ nav .logo img{
 
 .main{
 
-    height: 85%;
+    height: 90%;
     background: url(./src/BackGround.jpg);
     background-size: unset;
     background-repeat: no-repeat;
@@ -64,19 +63,80 @@ nav .logo img{
 .main .text .cta_btn{
     padding: 10px;
     margin: 20px;
-
     background: none;
     border: 3px solid var(--primary);
     border-radius: 10px;
+    text-decoration: none;
+    color: black;
 }
 .main .text h1{
     margin: 10px;
 }
 
 .second{
-    height: 85%;
-}
-.second img{
-    width: 20%;
+    display: flex;
+    margin: 5%;
+    width: 90%;
     height: 100%;
-} 
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 40px;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 0%;
+    width: 50%;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #335c67;
+    width: 60%;
+
+}
+.bar img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+.bar p{
+    font-size: 15px;
+}
+.second .post img{
+ max-width: 60%;
+ 
+
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+
+.desc .img{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    max-width: 100%;
+}
+
+.third{
+    height: 90%;
+}
+
+.third h1{
+    font-size: 50px;
+    text-align: center;
+}
+.third p{
+    margin-top: 2%;
+    width: 80%;
+    margin-left: 10%;
+}

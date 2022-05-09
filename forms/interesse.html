@@ -1,19 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form de Interesse</title>
-</head>
-<body>
-    <h1>AdoPet</h1>
-    <h4>Nome de usuário</h4>
-    <div></div>
-    <textarea placeholder = "Motivo do seu interesse..." cols=50></textarea>
-    </div>
-    <div>
-    <textarea placeholder = "Onde você pode encontrá-lo ?" cols=75></textarea>
-    </div>    
-</body>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:ital,wght@0,300;1,100&display=swap%27');
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      header {
+        width: 100%;
+        height: 3.5rem;
+        background: #ffa724;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      header h1 {
+        margin-left: 3rem;
+        font-size: 2rem;
+      }
+
+      main {
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: black;
+      }
+
+      .container {
+        background: rgb(48, 48, 48);
+
+        height: 12rem;
+        width: 34.5rem;
+      }
+
+      .user-name {
+        color: white;
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+        font-size: 1.3rem;
+      }
+
+      .comment {
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+      }
+
+      .second-coment {
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>AdoPet</h1>
+    </header>
+    <main>
+      <div class="container">
+        <h4 class="user-name">Nome de usuário</h4>
+
+        <div class="comment">
+          <div>
+            <textarea
+              placeholder="Motivo do seu interesse..."
+              cols="50"
+            ></textarea>
+          </div>
+          <div class="second-coment">
+            <textarea
+              placeholder="Onde você pode encontrá-lo ?"
+              cols="75"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

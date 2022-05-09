@@ -20,37 +20,59 @@ function checkInput(){
     emailConfirm = EmailConfirm.value;
     senha = Senha.value;
     senhaConfirm = SenhaConfirm.value;
+    validado = false;
 
     if(nome.length < 6 || nome == ''){
 
         Nome.style.border = '2px solid red';
         showError('Nome', 'O nome deve conter no mínimo 6 caracteres')
+        validado = false;
 
     } else{
         cleanError('Nome');
+        validado = true;
     }
 
     if(senha.length < 8){
         Senha.style.border = '2px solid red';
         showError('Senha', 'A senha deve conter no mínimo 8 caracteres');
+        validado = false;
     }else{
         cleanError('Senha')
+        validado = true;
     }
     if(senha != senhaConfirm){
         Senha.style.border = '2px solid red';
         SenhaConfirm.style.border = '2px solid red';
         showError('SenhaC', 'Senhas não conferem')
+        validado = false;
      }else{
          cleanError('SenhaC')
+         validado = true;
      }
      if (email == ''){
          Email.style.border = '2px solid red';
          showError('Email', 'O campo email não pode estar vazio');
+         validado = false;
      }
     if(email != emailConfirm){
         showError('EmailC', 'Os Email não conferem')
+        validado = false;
     }else{
         cleanError('EmailC')
+        validado = true;
+    }
+    if(user < 6){
+        User.style.border = '2px solid red'
+        showError('User', 'O user deve ter no mínimo 6 caracteres');
+        validado = false;
+    }else{
+        cleanError('User')
+        validado = true;
+    }
+
+    if(validado){
+        window.location = '../forms/login.html'
     }
 
 
