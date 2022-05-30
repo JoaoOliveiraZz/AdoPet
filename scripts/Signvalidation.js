@@ -1,5 +1,4 @@
 const Nome = document.getElementById('nome');
-const User = document.getElementById('user');
 const Email = document.getElementById('email');
 const EmailConfirm = document.getElementById('emailConfirm');
 const Senha = document.getElementById('senha');
@@ -15,7 +14,6 @@ Submit.addEventListener('submit', (e)=>{
 function checkInput(){
 
     nome = Nome.value;
-    user = User.value;
     email = Email.value;
     emailConfirm = EmailConfirm.value;
     senha = Senha.value;
@@ -62,21 +60,6 @@ function checkInput(){
         cleanError('EmailC')
         validado = true;
     }
-    if(user < 6){
-        User.style.border = '2px solid red'
-        showError('User', 'O user deve ter no mínimo 6 caracteres');
-        validado = false;
-    }else{
-        cleanError('User')
-        validado = true;
-    }
-
-    if(validado){
-        window.location = '../forms/login.html'
-    }
-
-
-    
     
 }
 function showError(input, msg){const MenssageError = document.getElementById(`${input}`).textContent = msg;}

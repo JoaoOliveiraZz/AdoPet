@@ -44,7 +44,7 @@ function checkInput(){
     }
 
     if(validado){
-        window.location.href = '../Fy/FyPage.html'; //redireciona o usuário para a FY caso todos os campos estão corretamente preenchidos
+        window.location.href = '../fy/FyPage.html'; //redireciona o usuário para a FY caso todos os campos estão corretamente preenchidos
     }
 
 
